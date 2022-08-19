@@ -1,3 +1,14 @@
+terraform {
+  cloud {
+    organization = "polygon"
+
+    workspaces {
+      name = "terraform-cloud-test"
+    }
+  }
+}
+
+
 
 # test comment
 resource "fakewebservices_vpc" "primary_vpc" {
